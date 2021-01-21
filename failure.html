@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Succcess</title>
+    <title>Error</title>
     <!-- Bootstrap core CSS -->
     <!-- Latest compiled and minified CSS -->
     <link
@@ -16,11 +16,17 @@
   <body>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Success!</h1>
+        <h1 class="display-4">Error</h1>
         <p class="lead">
-          You have successfully signed up to the newsletter, look forward to
-          great content!
+          There was a problem signing you up. Please try again or contact the
+          developer.
         </p>
+
+        <form action="/failure" method="post">
+          <button class="btn btn-lg btn-warning" type="submit" name="button">
+            Try Agaiin
+          </button>
+        </form>
       </div>
     </div>
   </body>
